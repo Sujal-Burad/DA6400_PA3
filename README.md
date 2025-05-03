@@ -39,7 +39,7 @@ Grid-based taxi navigation task where an agent must:
    - Activated when passenger needs to be dropped
    - Follows deterministic policy until successful delivery
 
-## 🤖 Methods & Implementation
+##  Methods & Implementation
 
 ### Learning Approaches
 - **SMDP (Semi-Markov Decision Process)**
@@ -58,3 +58,7 @@ Grid-based taxi navigation task where an agent must:
 
 The 'geography_based_options.ipynb' notebook has the options as mentioned in the problem statement, with epsilon greedy policy selection.
 The 'task_based_option_(task3)_bonus.ipynb' notebook has the 'pickup' and 'drop-off' options, with deterministic policy, for smdp and ioql.
+
+# Contribution
+  - Sujal: EE21B144 -- Task done, IOQL for both options
+  - Shivam: EE21B124 -- Task done, SMDP for both options,
