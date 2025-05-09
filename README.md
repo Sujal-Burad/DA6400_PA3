@@ -46,8 +46,8 @@ Grid-based taxi navigation task where an agent must:
 - **IOQL (Intra-Option Q-Learning)**
 
 ### Action Selection Strategy
-- ε-greedy exploration during option selection
-- Deterministic policy execution within options
+- ε-greedy exploration during option selection - Takes actions in a state to reach R, G, B, Y location using epsilon-greedy policy
+- Deterministic policy execution within options - Predefined actions to take in a state to reach the one of the R, G, B, Y location.
 
 ### Key Implementation Features
 1. **Option Interruption:** Automatic termination when reaching target location
@@ -56,9 +56,10 @@ Grid-based taxi navigation task where an agent must:
    - Low-level action execution
 3. **Reward Shaping:** Native environment rewards maintained
 
-The 'geography_based_options.ipynb' notebook has the options as mentioned in the problem statement, with epsilon greedy policy selection.
-The 'task_based_option_(task3)_bonus.ipynb' notebook has the 'pickup' and 'drop-off' options, with deterministic policy, for smdp and ioql.
+### Notebooks Overview
+1. `geography_based_options.ipynb` : Implements the options as described in the problem statement, utilizing an epsilon-greedy policy selection. (To use the deterministic policies, code similar to the Option function in task_based_option_(task3)_bonus.ipynb can be written in the Option function)
+2. `task_based_option_(task3)_bonus.ipynb` : Contains the 'pickup' and 'drop-off' options with deterministic policies, implemented for both SMDP and IOQL frameworks.
 
-# Contribution
-  - Sujal: EE21B144 -- Task done, IOQL for both options
-  - Shivam: EE21B124 -- Task done, SMDP for both options,
+### Contribution
+1. **Sujal (EE21B144)**: Implemented IOQL and SMDP for both sets of options.
+2. **Shivam (EE21B124)**: Responsible for report preparation and documentation.
